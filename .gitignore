@@ -1,0 +1,26 @@
+# server
+server/.DS_Store
+server/.idea
+server/.vscode
+server/*.suo
+server/*.ntvs*
+server/*.njsproj
+server/*.sln
+server/*.sw?
+
+# web
+web/.DS_Store
+web/.idea
+web/.vscode
+web/*.suo
+web/*.ntvs*
+web/*.njsproj
+web/*.sln
+web/*.sw?
+web/node_modules
+web/dist
+
+
+# local env files
+.env.local
+.env.*.local

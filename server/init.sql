@@ -1,0 +1,33 @@
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+
+-- 导出 gin 的数据库结构
+CREATE DATABASE IF NOT EXISTS `gin` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+USE `gin`;
+
+-- 导出  表 gin.t_user 结构
+CREATE TABLE IF NOT EXISTS `t_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(30) NOT NULL,
+  `password` varchar(100) DEFAULT NULL,
+  `user_status` int(2) NOT NULL DEFAULT '0',
+  `create_at` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- 正在导出表  gin.t_user 的数据：~5 rows (大约)
+INSERT INTO `t_user` (`id`, `username`, `password`, `user_status`, `create_at`) VALUES
+	(1, 'admin', '$2a$04$tphEJfaOERJNAnYCxg1nh.grSmSeZFur7.nrtCNQXxuK5eozeGU0y', 0, '2023-07-31 17:00:00');
+
+/*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

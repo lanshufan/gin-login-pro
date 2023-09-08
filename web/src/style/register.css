@@ -1,0 +1,12 @@
+.register-box-style {
+    position: relative;
+    margin-left: 1%;
+    margin-top: 1%;
+    width: 70%;
+}
+
+.register-button-style {
+    position: relative;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
