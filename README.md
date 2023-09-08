@@ -46,9 +46,13 @@ npm install
 # start web
 npm run serve
 
-# open with browser
-http://127.0.0.1:8080
-
 # build
 npm run build
+```
+
+## 访问
+```
+http://127.0.0.1:8080
+# default username and password
+admin/123456
 ```
