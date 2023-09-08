@@ -1,5 +1,6 @@
 # server
 server/.DS_Store
+server/go.sum
 server/.idea
 server/.vscode
 server/*.suo
